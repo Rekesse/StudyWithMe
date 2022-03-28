@@ -1,0 +1,52 @@
+\documentclass[a4paper, 12pt, twoside]{report}
+
+\usepackage{physics, amsmath}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{
+        colorlinks=true,
+                linkcolor=black,
+                urlcolor=blue,
+}
+
+\usepackage{geometry}
+\geometry{
+        top=2cm,
+                bottom=2cm,
+                left=2cm,
+                right=3cm,
+                headheight=17pt,
+                includeheadfoot,
+}
+
+\usepackage{fancyhdr, lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Mettere icona GitHub}
+\rhead{ Relatività Ristretta }
+\cfoot{Pagina \thepage\ di \pageref{LastPage}}
+\renewcommand{\headrulewidth}{1.0pt}
+
+\usepackage{etoolbox}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+\title{Cinematica Relativistica}
+\author{Pietro Garofalo}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+
+\chapter{Le trasformazioni di Lorentz }
+Le leggi della relatività speciale si ricavano da tre principi tratti da evidenze sperimentali: 
+\begin{enumerate}[label=(\roman)]
+        \item Ciao  
+
+\end{enumerate}
+
+\end{document}
+
