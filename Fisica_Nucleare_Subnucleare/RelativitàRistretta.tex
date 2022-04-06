@@ -165,6 +165,166 @@ Abbiamo così ottenuto le trasformazioni delle velocità :
 In meccanica relativistica non esiste il semplice vettore impulso ma esiste il vettore \textbf{quadrimpulso}, che ha come componenti energia e impulso 
 e lo definiamo come : 
 \begin{align*}
-        \vb{P} \equiv p^{\mu} = \qty(\frac{E}{c}, \va{p}) 
+        \vb{P} \equiv p^{\mu} = \qty(\frac{E}{c}, \va{p}) \tag*{dove \ $ \va{p} = \begin{pmatrix} p_{x} \\ p_{y} \\ p_{z} \end{pmatrix}$} 
 \end{align*}
+In meccanica relativistica il quadrivettore impulso \textbf{NON} è un invariante relativistico, ma: 
+\\
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=ATTENZIONE !]
+Il prodotto di un qualsiasi quadrivettore per se stesso è un invariante relativistico ossia che il suo valore non cambia se cambiamo sistema di riferimento . 
+\end{tcolorbox}
+Da ciò deduciamo che :
+\begin{align*}
+        \vb{P^{2}} = \vb{P^{\mu}}\vb{P_{\mu}} = \frac{E^{2}}{c^2} - \abs{\va{p}}^2
+\end{align*}
+Prima di andare avanti col calcolo di $\vb{P^{2}}$, indicheremo con $\textit{p} \equiv \abs{\va{p}}$, scriviamo qui delle relazioni fondamentali : \\
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=ATTENZIONE !]
+\begin{equation*}
+        \left\{ \begin{aligned}
+                        E &= m\gamma c^{2} \\
+                        \va{p} &= m\gamma\va{v} 
+                \end{aligned}
+                \right.
+\end{equation*}
+\end{tcolorbox}
+Allora si ottiene che il prodotto del quadrimpulso per se stesso è legato alla massa della particella : 
+\begin{align*}
+        \vb{P^2} = \frac{\qty(m\gamma c^{2})^2}{c^2} - \qty(m\gamma\textit{v})^2 = m^2c^2
+\end{align*}
+\newpage
+Ponendo $c = 1$ e ricordando la forma iniziale di $\vb{P^2}$ si ottiene la seguente : \\
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=ATTENZIONE !]
+Alcune relazioni fondamentali : 
+\begin{equation*}
+        \left\{\begin{aligned}
+        E^2 &= \textit{p}^2 + m^2\\
+        \beta &=\frac{\textit{p}c}{E}\\ 
+        \gamma &= \frac{E}{mc^2} \\
+        \beta\gamma &= \frac{p}{mc}
+\end{aligned}
+\right.
+\end{equation*}
+Ricordiamo che : 
+\begin{center} $\vb{P}$ e $E$ sono \textbf{grandezze conservate} \\ $\vb{P}^2$ è un invariante di Lorentz\end{center}
+\end{tcolorbox}
+\section{Esercizi di riepilogo}
+\begin{center}{\textbf{Esercizio : Decadimento e relatività speciale}}\end{center}
+Un pione decade a riposo in un muone e un neutrino tramite il seguente processo : 
+\begin{align*}
+    \pi^{-} \rightarrow \mu^{-} + \nu_{\mu}
+\end{align*}
+Conoscendo i seguenti dati : $m_{\mu} = 105.6$Mev e il tempo proprio di vita $\tau_{\mu} = 2.2\mu s$ mentre il 
+pione ha massa $m_{\pi} = 139.6$MeV.\\ 
+Che distanza percorre il muone nel riferimento del laboratorio ? \\
+Innanzitutto quello che bisogna capire è che il tempo $\tau_{\mu}$ è il tempo proprio della particella ossia il tempo 
+misurato nel sistema di riferimento della particella stessa, se volessimo calcolare L quindi che altro non è che la 
+velocità per il tempo :\\
+\begin{center} $L = \textit{v}t$\end{center}
+Il tempo t ( il tempo nel sistema di riferimento del laboratorio ) non conincide con $\tau_{\mu}$ a causa della dilatazione dei tempi, 
+si ha invece che $t=\gamma\tau_{\mu}$ ottenendo : 
+\begin{align*}
+        L &= c\beta\gamma\tau_{\mu}  \tag*{dove $\beta = \frac{\textit{v}}{c} \rightarrow \textit{v} = c\beta$} \\
+          &= \frac{\textit{$p_{\mu}$}}{m_{\mu}}\tau_{\mu} \tag*{usata la relazione : $\beta\gamma = \frac{\textit{p}}{mc}$}
+\end{align*}
+Dove \textit{$p_{\mu}$} $\equiv \abs{\va{p_{\mu}}}$ che è quello che ci resta da calcolare, si hanno due metodi : 
+\newpage
+\textbf{1) Usiamo la legge della conservazione} \\
+Sappiamo, già dalla meccanica classica che energia e impulso si conservano quindi possiamo scrivere la relazione prima del decadimento
+e dopo ( nel sistema di riferimento del laboratorio ): 
+\begin{align*}
+        E_{\pi} &= E_{\mu} + E_{\nu} \\
+        \va{p}_{\pi} &= \va{p}_{\mu} + \va{p}_{\nu}
+\end{align*}
+Vediamo ora le energie e impulsi per ogni particella : \\
+\textbf{Pione:} \\
+Sappiamo che è a riposo, otteniamo quindi che : 
+\begin{equation*}
+        \left\{ \begin{aligned}
+                        \va{p}_{\pi} &= 0 \\
+                        E_{\pi} &= \sqrt{m^2_{\pi}c^4 + \textit{p}_{\pi}^2c^2} = m_{\pi}c^2 
+                \end{aligned}
+                \right.
+                \qquad \text{$E=mc^2$ è anche detta energia a riposo!}
+\end{equation*}
+\textbf{Muone:}\\
+Del muone ci scriviamo solo l'energia siccome abbiamo già detto all'inizio che l'impulso è incognita : 
+\begin{align*}
+    E_{\mu} = \sqrt{m_{\mu}^2c^4 + \textit{p}_{\mu}^2c^2}
+\end{align*}
+\textbf{Neutrino:}\\
+Avendo il neutrino massa nulla : 
+\begin{align*}
+    E_{\nu} = \textit{p}_{\nu}c
+\end{align*}
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=ATTENZIONE !]
+        Dal fatto che $\va{p}_{\pi} = 0$ e per la conservazione otteniamo che : 
+        \begin{align*}
+                &0 = \va{p}_{\mu} + \va{p}_{\nu} \\
+                &\va{p}_{\mu} = -\va{p}_{\nu} 
+        \end{align*}
+        Quello che ci serve per i calcoli è che : 
+        \begin{align*}
+            \abs{\va{p}_{\mu}} \equiv \textit{p}_{\mu} = \textit{p}_{\nu} \equiv \abs{\va{p}_{\nu}}
+        \end{align*}
+\end{tcolorbox}
+Ossia il muone e il neutrino hanno stessa velocità e direzione ma verso opposto. \\
+Possiamo ora continuare con i calcoli ripartendo dalla conservazione dell'energia: 
+\begin{align*}
+        &m_{\pi}c^2 = \sqrt{m_{\mu}^2c^4 + \textit{p}_{\mu}^2c^2} + \textit{p}_{\mu}c\\
+        &m_{\pi}c^2 - \textit{p}_{\mu}c =\sqrt{m_{\mu}^2c^4 +\textit{p}_{\mu}^2c^2 }\\ 
+        &m_{\pi}^2c^4 + \textit{p}_{\mu}^2c^2 - 2m_{\pi}\textit{p}_{\mu}c^3 = m_{\mu}^2c^4 +\textit{p}_{\mu}^2c^2
+\end{align*}
+da cui segue che : 
+\begin{align*}
+        \textit{p}_{\mu} = \frac{m_{\pi}^2 - m_{\mu}^2}{2m_{\pi}}c
+\end{align*}
+Allora la distanza che percorre, nel sistema di riferimento del laboratorio è : 
+\begin{align*}
+        L &= \frac{\textit{p}_{\mu}}{m_{\mu}}\tau_{\mu}\\
+          &= \frac{m_{\pi}^2 - m_{\mu}^2}{2m_{\pi}}c\tau_{\mu}
+\end{align*}
+Passiamo ora al secondo metodo. \\
+\textbf{2) Usando i quadrimpulsi}\\
+La conservazione dell impulso vale anche per i quadrivettori, si può scrivere quindi : 
+\begin{align*}
+    \vb{P}_{\pi} = \vb{P}_{\mu} + \vb{P}_{\nu}
+\end{align*}
+Vogliamo ottenere $\textit{p}_{\mu}$ ossia il modulo della componente vettoriale del quadrimpulso, per farlo 
+isoliamo $\vb{P}_{\mu}$ ottendendo : 
+\begin{align*}
+    \vb{P}_{\mu} = \vb{P}_{\pi} - \vb{P}_{\nu}
+\end{align*}
+Ricordando che \textbf{il prodotto scalare di un quadrivettore con se stesso è invariante} e che è uguale alla massa al riposo 
+al quadrato : 
+\begin{align*}
+        m_{\mu}^2c^2 &= m_{\pi}^2c^2 + m_{\nu}^2c^2 -2\vb{P}_{\pi}\vdot\vb{P}_{\nu}  \tag*{$m_{\nu} = 0$} \\
+        m_{\mu}^2c^2 &= m_{\pi}^2c^2 -2\qty(\typical \frac{E_{\pi}}{c} \frac{E_{\nu}}{c} - \va{p}_{\pi}\vdot\va{p}_{\nu}) \tag*{$\va{p}_{\pi} = 0$ \ $E_{\nu} = \textit{p}_{\mu}c$}\\
+        m_{\mu}^2c^2 &= m_{\pi}^2c^2 -2m_{\pi}\textit{p}_{\mu}c 
+\end{align*}
+Otteniamo la stessa forma di $\textbf{p}_{\mu}$ ottenuta col primo metodo . 
+\newpage
+\chapter{Sistemi di riferimento e massa invariante}
+Negli eseperimenti di interazione fra particelle i sistemi di riferimento tipici sono due : quello del \textbf{laboratorio} e quello del \textbf{centro di massa}.
+\section{Sistema del laboratorio}
+Il sistema di riferimento del laboratorio è il sistema solidale con l'osservatore, si ha una particella bersaglio ferma e una particella che gli va incontro, si hanno 
+quindi i due quadrimpulsi: 
+\begin{align*}
+        &\vb{P}_1 = \qty(\typical \frac{E_1}{c},\va{p}_1) \\
+        &\vb{P}_2 = \qty(\typical \frac{E_2}{c}, 0) \\
+        &\vb{P}_{tot} = \qty(\typical \frac{E_1}{c} + m_2c, \va{p}_1) \tag*{essendo ferma $ \frac{E_2}{c} = m_2c $}
+\end{align*}
+\section{Sistema del centro di massa}
+Il sistema del centro di massa è definito come quel sistema nel quale \textbf{l'impulso totale è nullo}.\\
+Nel caso particolare in cui le due particelle hanno stessa massa ( es il collider ) il sistema del centro di massa conincide con il sistema del laboratorio. \\
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=ATTENZIONE !]
+        Indichiamo con $\vb{P}^{\prime}$ e $\va{p}^{\prime}$ rispettivamente i quadrimpulsi e i vettori impulso nel sistema di riferimento del centro di massa .
+\end{tcolorbox}
+\newpage
+Abbiamo che : 
+\begin{align*}
+    &\vb{P}^{\prime}_1 = \qty(\typical \frac{E^{\prime}_1}{c}, \va{p}^{\prime}) \\
+    &\vb{P}^{\prime}_2 = \qty(\typical \frac{E^{\prime}_2}{c}, -\va{p}^{\prime}) \\
+    &\vb{P}^{\prime}_{tot} = \qty(\typical \frac{E^{\prime}_1 +  E^{\prime}_2}{c}, 0)
+\end{align*}
+\section{Massa invariante}
+
 \end{document}
