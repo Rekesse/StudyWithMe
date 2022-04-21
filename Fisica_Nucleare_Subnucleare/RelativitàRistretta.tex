@@ -207,7 +207,40 @@ Ricordiamo che :
 \begin{center} $\vb{P}$ e $E$ sono \textbf{grandezze conservate} \\ $\vb{P}^2$ è un invariante di Lorentz\end{center}
 \end{tcolorbox}
 \section{Esercizi di riepilogo}
-\begin{center}{\textbf{Esercizio : Decadimento e relatività speciale}}\end{center}
+\begin{center}{\textbf{Esercizio 1 : Energia e lavoro}}\end{center}
+Quanto lavoro bisogna compiere per aumentare la velocità di un elettrone di massa \\ 
+$m = 511 \frac{KeV}{c^2}$ dalla posizione a riposo a 0.50c ? 
+\begin{center}{\textbf{Soluzione}}\end{center}
+In generale il lavoro si calcola $ L = E_{f} - E_{i}$, ci sono due metodi :\\ 
+\textbf{1) Forza bruta} \\
+Questo metodo consiste nell'utilizzare la definizione di Energia : \\ 
+\begin{align*}
+        E_{f} &= \sqrt{m^2c^4 + \textit{p}^2c^2} \tag*{ricordando $\textit{p} = m\gamma\textit{v}$}\\ 
+          &= \sqrt{m^2c^4 +m^2\gamma^2c^20.5^2c^2} \tag*{$\textit{v} = 0.5c$}\\
+          &= 589 \ KeV
+\end{align*}
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=ATTENZIONE !]
+Utile per i calcoli: \\
+la massa se noti è espressa in $\frac{KeV}{c^2}$, questo vuol dire che quando abbiamo $mc^2$ 
+vuol dire che si ha $\frac{KeV}{c^2}c^2 = KeV$
+\end{tcolorbox}
+Per l'energia iniziale si ha invece : \\
+\begin{align*}
+    E_{i} &= \sqrt{m^2c^4 + \textit{p}^2c^2} \\
+          &= \sqrt{m^2c^4} \tag*{poichè $\textit{v}_{i} = 0$}\\
+          &= mc^2 \\
+          &= 511 \ KeV
+\end{align*}
+Si ottiene che lavoro $L = E_{f} - E_{i} = 589 KeV - 511 KeV = 78 KeV$ \\
+\textbf{2) Usando le relazioni fondamentali}\\
+Bisogna ricordarsi la relazione $E = m\gamma c^2$, infatti all'interno di gamma è contenuta la 
+velocità, nel caso particolare $\textit{v} = 0$ allora $\gamma = 1$ : \\
+\begin{align*}
+        E_{f} &= m\gamma c^2 \tag*{$\gamma = \frac{1}{\sqrt{1-\frac{0.5c}{c}}}$}\\
+        E_{i} &= mc^2\\
+        L &= m\gamma c^2 - mc^2 = mc^2(\gamma - 1) = 78 KeV
+\end{align*}
+\begin{center}{\textbf{Esercizio 2 : Decadimento e relatività speciale}}\end{center}
 Un pione decade a riposo in un muone e un neutrino tramite il seguente processo : 
 \begin{align*}
     \pi^{-} \rightarrow \mu^{-} + \nu_{\mu}
@@ -215,6 +248,7 @@ Un pione decade a riposo in un muone e un neutrino tramite il seguente processo 
 Conoscendo i seguenti dati : $m_{\mu} = 105.6$Mev e il tempo proprio di vita $\tau_{\mu} = 2.2\mu s$ mentre il 
 pione ha massa $m_{\pi} = 139.6$MeV.\\ 
 Che distanza percorre il muone nel riferimento del laboratorio ? \\
+\begin{center}{\textbf{Soluzione}}\end{center}
 Innanzitutto quello che bisogna capire è che il tempo $\tau_{\mu}$ è il tempo proprio della particella ossia il tempo 
 misurato nel sistema di riferimento della particella stessa, se volessimo calcolare L quindi che altro non è che la 
 velocità per il tempo :\\
@@ -225,8 +259,7 @@ si ha invece che $t=\gamma\tau_{\mu}$ ottenendo :
         L &= c\beta\gamma\tau_{\mu}  \tag*{dove $\beta = \frac{\textit{v}}{c} \rightarrow \textit{v} = c\beta$} \\
           &= \frac{\textit{$p_{\mu}$}}{m_{\mu}}\tau_{\mu} \tag*{usata la relazione : $\beta\gamma = \frac{\textit{p}}{mc}$}
 \end{align*}
-Dove \textit{$p_{\mu}$} $\equiv \abs{\va{p_{\mu}}}$ che è quello che ci resta da calcolare, si hanno due metodi : 
-\newpage
+Dove \textit{$p_{\mu}$} $\equiv \abs{\va{p_{\mu}}}$ che è quello che ci resta da calcolare, si hanno due metodi : \\
 \textbf{1) Usiamo la legge della conservazione} \\
 Sappiamo, già dalla meccanica classica che energia e impulso si conservano quindi possiamo scrivere la relazione prima del decadimento
 e dopo ( nel sistema di riferimento del laboratorio ): 
@@ -297,7 +330,7 @@ Ricordando che \textbf{il prodotto scalare di un quadrivettore con se stesso è 
 al quadrato : 
 \begin{align*}
         m_{\mu}^2c^2 &= m_{\pi}^2c^2 + m_{\nu}^2c^2 -2\vb{P}_{\pi}\vdot\vb{P}_{\nu}  \tag*{$m_{\nu} = 0$} \\
-        m_{\mu}^2c^2 &= m_{\pi}^2c^2 -2\qty(\typical \frac{E_{\pi}}{c} \frac{E_{\nu}}{c} - \va{p}_{\pi}\vdot\va{p}_{\nu}) \tag*{$\va{p}_{\pi} = 0$ \ $E_{\nu} = \textit{p}_{\mu}c$}\\
+        m_{\mu}^2c^2 &= m_{\pi}^2c^2 -2\qty(\frac{E_{\pi}}{c} \frac{E_{\nu}}{c} - \va{p}_{\pi}\vdot\va{p}_{\nu}) \tag*{$\va{p}_{\pi} = 0$ \ $E_{\nu} = \textit{p}_{\mu}c$}\\
         m_{\mu}^2c^2 &= m_{\pi}^2c^2 -2m_{\pi}\textit{p}_{\mu}c 
 \end{align*}
 Otteniamo la stessa forma di $\textbf{p}_{\mu}$ ottenuta col primo metodo . 
@@ -308,9 +341,9 @@ Negli eseperimenti di interazione fra particelle i sistemi di riferimento tipici
 Il sistema di riferimento del laboratorio è il sistema solidale con l'osservatore, si ha una particella bersaglio ferma e una particella che gli va incontro, si hanno 
 quindi i due quadrimpulsi: 
 \begin{align*}
-        &\vb{P}_1 = \qty(\typical \frac{E_1}{c},\va{p}_1) \\
-        &\vb{P}_2 = \qty(\typical \frac{E_2}{c}, 0) \\
-        &\vb{P}_{tot} = \qty(\typical \frac{E_1}{c} + m_2c, \va{p}_1) \tag*{essendo ferma $ \frac{E_2}{c} = m_2c $}
+        &\vb{P}_1 = \qty(\frac{E_1}{c},\va{p}_1) \\
+        &\vb{P}_2 = \qty(\frac{E_2}{c}, 0) \\
+        &\vb{P}_{tot} = \qty(\frac{E_1}{c} + m_2c, \va{p}_1) \tag*{essendo ferma $ \frac{E_2}{c} = m_2c $}
 \end{align*}
 \section{Sistema del centro di massa}
 Il sistema del centro di massa è definito come quel sistema nel quale \textbf{l'impulso totale è nullo}.\\
@@ -321,10 +354,23 @@ Nel caso particolare in cui le due particelle hanno stessa massa ( es il collide
 \newpage
 Abbiamo che : 
 \begin{align*}
-    &\vb{P}^{\prime}_1 = \qty(\typical \frac{E^{\prime}_1}{c}, \va{p}^{\prime}) \\
-    &\vb{P}^{\prime}_2 = \qty(\typical \frac{E^{\prime}_2}{c}, -\va{p}^{\prime}) \\
-    &\vb{P}^{\prime}_{tot} = \qty(\typical \frac{E^{\prime}_1 +  E^{\prime}_2}{c}, 0)
-\end{align*}
+    &\vb{P}^{\prime}_1 = \qty(\frac{E^{\prime}_1}{c}, \va{p}^{\prime}) \\
+    &\vb{P}^{\prime}_2 = \qty(\frac{E^{\prime}_2}{c}, -\va{p}^{\prime}) \\
+    &\vb{P}^{\prime}_{tot} = \qty(\frac{E^{\prime}_1 +  E^{\prime}_2}{c}, 0) \end{align*}
 \section{Massa invariante}
-
+Consideriamo un sistema di N particelle ciascuna con il suo quadrimpulso $\vb{P}_{i} = \qty(\frac{E_{i}}{c},\va{p}_{i})$ come abbiamo detto 
+possiamo definire il quadrimpulso totale $\vb{P}_{tot} = \sum_i \vb{P}_{i}$. \\
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=ATTENZIONE !]
+Ricordando che il modulo quadro di un quadrivettore è un invariante relativistico allora possiamo definire la \textbf{MASSA INVARIANTE} del sistema 
+e indicheremo con $\sqrt{S}$ : 
+\begin{align*}
+    \sqrt{S} &= \sqrt{\vb{P}_{tot} \vdot \vb{P}_{tot}} \\
+             &= \sqrt{\qty(\sum_i E_{i})^2 - \qty|\sum_i \va{p}_{i}|^2 }
+\end{align*}
+Come detto esso è un invariante quindi possiamo calcolarlo anche nel sistema del centro di massa $\sqrt{S^{\prime}}$
+\begin{align*}
+        \sqrt{S^{\prime}} = \sum_i E^{\prime}_{i} = E_{tot}
+\end{align*}
+Nota che nel centro di massa la massa invariante è denominata \textbf{Energia del centro di massa}
+\end{tcolorbox}
 \end{document}
