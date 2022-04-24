@@ -206,8 +206,17 @@ Alcune relazioni fondamentali :
 Ricordiamo che : 
 \begin{center} $\vb{P}$ e $E$ sono \textbf{grandezze conservate} \\ $\vb{P}^2$ è un invariante di Lorentz\end{center}
 \end{tcolorbox}
+Vediamo come si applicano le trasformazioni di Lorentz al quadrimpulso definendo sempre con l'apice $\prime$ le quantità 
+riferite al sistema di riferimento in moto: 
+\begin{equation*}
+        \left\{\begin{aligned} 
+                \frac{E^{\prime}}{c} &= \gamma\frac{E}{c} - \beta\gamma\textit{p}_{x} \\
+                \textit{p}^{\prime}_{x} &= -\beta\gamma\frac{E}{c} + \gamma\textit{p}_{x}
+        \end{aligned}
+\right.
+\end{equation*}
 \section{Esercizi di riepilogo}
-\begin{center}{\textbf{Esercizio 1 : Energia e lavoro}}\end{center}
+\subsection{Esercizio 1 : Energia e lavoro}
 Quanto lavoro bisogna compiere per aumentare la velocità di un elettrone di massa \\ 
 $m = 511 \frac{KeV}{c^2}$ dalla posizione a riposo a 0.50c ? 
 \begin{center}{\textbf{Soluzione}}\end{center}
@@ -240,7 +249,7 @@ velocità, nel caso particolare $\textit{v} = 0$ allora $\gamma = 1$ : \\
         E_{i} &= mc^2\\
         L &= m\gamma c^2 - mc^2 = mc^2(\gamma - 1) = 78 KeV
 \end{align*}
-\begin{center}{\textbf{Esercizio 2 : Decadimento e relatività speciale}}\end{center}
+\subsection{Esercizio 2 : Decadimento e relatività speciale}
 Un pione decade a riposo in un muone e un neutrino tramite il seguente processo : 
 \begin{align*}
     \pi^{-} \rightarrow \mu^{-} + \nu_{\mu}
@@ -373,4 +382,38 @@ Come detto esso è un invariante quindi possiamo calcolarlo anche nel sistema de
 \end{align*}
 Nota che nel centro di massa la massa invariante è denominata \textbf{Energia del centro di massa}
 \end{tcolorbox}
+\newpage
+\subsection{Differenze fra lab e CdM : decadimento di una particella}
+Consideriamo il decadimento del pione dato dalla seguente reazione : 
+\begin{align*}
+    \pi^{-} \rightarrow \mu^{-} + \nu_{\mu}
+\end{align*}
+conosciamo i valori delle masse, ci chiediamo quanta energia abbia il muone ( $m_{\nu} = 0$ )
+\begin{center}\textbf{Lavoriamo nel CdM}\end{center}
+Nelle reazioni la quantità importante da calcolare è $\sqrt{S}$ che è un invariante e si conserva, calcoliamocelo nel CdM e 
+facciamolo prima nel sistema allo stato iniziale.\\
+Inizialmente si ha una sola particella ossia il pione quindi il CdM conincide con il sistema di riferimento della particella stessa : 
+\begin{align*}
+        \vb{P}^{\prime}_{i} = \qty(m_{\pi}c^2,0) \rightarrow \sqrt{S^{\prime}_{i}} = m_{\pi}c^2
+\end{align*}
+Nello stato finale invece abbiamo due particelle ( scrivo direttamente il quadrimpulso totale ): 
+\begin{align*}
+        \vb{P}^{\prime}_{f} = \qty(\frac{E^{\prime}_{\mu} + E^{\prime}_{\nu}}{c},0) \rightarrow \sqrt{S^{\prime}_{f}} = E^{\prime}_{\mu} + E^{\prime}_{\nu} \tag*{ c = 1 }
+\end{align*}
+Per calcolare le energie bisogna trovare gli impulsi calcolati nel centro di massa, per farlo utilizziamo la \textbf{ conservazione dell'impulso }
+\begin{align*}
+        \va{p}_{\pi} &= \va{p}_{\mu} + \va{p}_{\nu} \\
+        0 &= \textit{p}_{\mu} + \textit{p}_{\nu}\\
+        \textit{p}_{\mu} &= - \textit{p}_{\nu}
+\end{align*}
+Possiamo ora calcolarci $\sqrt{S^{\prime}_{f}}$ eguagliarlo a $\sqrt{S^{\prime}_{i}}$ e trovarci così $\textit{p}_{\mu}$. \\
+Tutto questo per dire che $\sqrt{S}$ e $E_{\mu}$ calcolati nel \textbf{centro di massa hanno valori ben definiti}. \\
+\begin{center}\textbf{Lavoriamo nel Lab}\end{center}
+Per trovarci $E_{\mu}$ nel Lab basta applicare le trasformazioni di Lorentz al valore che abbiamo trovato nel CdM : 
+\begin{align*}
+        E_{\mu} &= \gamma_{\pi}E^{\prime}_{\mu} + \beta_{\pi}\gamma_{\pi}\va{p}^{\prime}_{\mu} \\
+                &= \gamma_{\pi}E^{\prime}_{\mu} + \beta_{\pi}\gamma_{\pi}\textit{p}^{\prime}_{\mu}\cos{\theta}\\
+                &= \qty[\gamma_{\pi}E^{\prime}_{\mu} - \beta_{\pi}\gamma_{\pi}\textit{p}^{\prime}_{\mu} , \gamma_{\pi}E^{\prime}_{\mu} + \beta_{\pi}\gamma_{\pi}\textit{p}^{\prime}_{\mu}]  \tag*{$\cos{\theta} \in [-1,1]$} \\
+                &\simeq \qty[105.6 MeV , 122.7 MeV]
+\end{align*}
 \end{document}
