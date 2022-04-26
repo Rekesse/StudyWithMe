@@ -1,0 +1,118 @@
+\documentclass[a4paper, 12pt, twoside]{report}
+
+\usepackage{listings}
+\usepackage{physics, amsmath, amsfonts, systeme}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{ {./ch1} }
+\hypersetup{
+        colorlinks=true,
+                linkcolor=black,
+                urlcolor=blue,
+}
+
+\usepackage{geometry}
+\geometry{
+        top=2cm,
+                bottom=2cm,
+                left=2cm,
+                right=3cm,
+                headheight=17pt,
+                includeheadfoot,
+}
+
+\usepackage{fancyhdr, lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Mettere icona GitHub}
+\rhead{ Machine Learning }
+\cfoot{Pagina \thepage\ di \pageref{LastPage}}
+\renewcommand{\headrulewidth}{1.0pt}
+
+\usepackage{etoolbox}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+\title{Machine Learning}
+\author{Pietro Garofalo}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+
+\chapter{Introduzione alla teoria Bayesiana nel machine learning}
+Abbiamo un classico problema di classificazione, si hanno $C_n$ classi ciascuna etichettata con un label $y_n$.\\
+Supponiamo di avere un determinato numero di features $\vb{X} = \qty(x_1,x_2,...,x_n)$ che descrivono le mie classi, il problema che ci poniamo 
+è di trovare la : 
+\begin{align*}
+        P(y|\vb{X}) 
+\end{align*}
+Ossia la probabilità di avere la classe targata y date features $\vb{X}$ infatti data questa la scelta che faremo 
+fra tutte le classi è quella t.c la probabilità di cui sopra è massima ! \\
+Trovare tale probabilità però è difficile, entra quindi in gioco il teorema di Bayes : \\
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=ATTENZIONE !]
+\textbf{Teorema di Bayes : }
+\begin{align*}
+    P(y|\vb{X}) = \frac{P(\vb{X}|y)P(y)}{P(\vb{X})}
+\end{align*}
+\end{tcolorbox}
+Tale teorema ci aiuta nel compito di determinare la probabilità che cerchiamo, facciamo un esempio per chiarire.\\
+\begin{center}
+        \begin{tabular}{||c c c||}
+                \hline
+                $x_1$ & $x_2$ & y \\
+                \hline\hline
+                0 & 0 & 0 \\
+                \hline
+                0 & 1 & 1 \\
+                \hline
+                1 & 2 & 1 \\
+                \hline 
+                0 & 0 & 0 \\
+                \hline
+                2 & 2 & 0 \\
+                \hline
+                1 & 1 & 0 \\
+                \hline
+                0 & 2 & 1 \\
+                \hline
+                2 & 0 & 0 \\
+                \hline
+                2 & 1 & 0 \\
+                \hline
+                1 & 0 & 0 \\ 
+                \hline
+        \end{tabular}
+\end{center}
+Se ti dovessi dare $\vb{X}=\qty(0,2)$ mi sapresti dire a quale classe appartiene ? \\
+Applichiamo il th. di Bayes e vediamo, calcoliamoci tutte le quantità che ci servono : 
+\begin{align*}
+        &P(y=0) = \frac{n(y=0)}{n(y=1) + n(y=0)} = \frac{6}{10}\\
+        &P(y=1) = \frac{n(y=1)}{n(y=1) + n(y=0)} = \frac{4}{10} \\
+        &P(\vb{X}=(0,2)|y=0) = 0 \\
+        &P(\vb{X}=(0,2)|y=1) = \frac{1}{4}
+\end{align*}
+Troviamo quindi usando formula di Bayes : 
+\begin{align*}
+        &P(y = 0|\vb{X}) = 0 \\
+        &P(Y=1 |\vb{X}) = \frac{1}{10}
+\end{align*}
+La risposta alla domanda iniziale sarà y = 1, semplice no? \\ 
+\textbf{Assolutamente no !} il problema 
+è che qui avevamo solo 10 features e 10 campioni, pensa se ne hai 10000 e passa, come fai a controllare 
+tutti i campioni per trovare la combinazione giusta ? E se non la trovi dal tuo dataset di campioni essa risulta zero? 
+\section{Metodo di Naive-Bayes}
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=ATTENZIONE !]
+La assunzione fondamentale è che le features $x_1 , x_2, ... , x_n$ siano indipendenti così che possiamo scrivere : 
+\begin{align*}
+    P(\vb{X=(0,2)|y=0}) = P(x_1=0|y=0)*P(x_2=2|y=0)
+\end{align*}
+\end{tcolorbox}
+Trasformando la probabilità in una produttoria sarà ora molto più facile trovarla, basta per esempio un semplice istogramma 
+( come vedremo in un esempio ) ed il gioco è fatto !
+\end{document}
+
