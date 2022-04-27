@@ -7,5 +7,5 @@ Prova di un readme.md file
 ## Contenuti 
 
 - Meccanica Quantistica ( in progress )
-- Esercizi commentati ( ToDo )
-- Fisica nucleare e subnucleare ( in progress )
+- Esercizi Fisica nucleare e subnucleare ( in progress )
+- Machine Learning ( in progress )
