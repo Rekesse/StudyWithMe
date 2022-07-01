@@ -6,6 +6,6 @@ Prova di un readme.md file
 
 ## Contenuti 
 
-- Meccanica Quantistica ( in progress )
 - Esercizi Fisica nucleare e subnucleare ( in progress )
-- Machine Learning ( in progress )
+- Teoria Fisica nucleare e subnucleare ( in progress )
+- Ottica ( in progress )
