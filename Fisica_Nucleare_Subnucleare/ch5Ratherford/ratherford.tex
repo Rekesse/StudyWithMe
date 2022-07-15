@@ -1,4 +1,45 @@
 \chapter{L'esperimento di Rutherford}
+\section{Thomson vs Rutherford : chi ha ragione?}
+Nei primi anni del 900 vi erano due modelli atomici : 
+\begin{itemize}
+        \item Il \textbf{modello di Thomson} per il quale l'atomo e schematizzato come una sfera
+                con densità di carica uniforme, sostanzialmente le cariche positive e 
+                negative erano distribuite uniformemente.
+        \item il \textbf{modello di Rutherford} l'atomo era costituito da un nucleo puntiforme
+                carico positivamente al centro e le cariche negative che gli orbitavano attorno.
+\end{itemize}
+Nel caso del modello di Thomson il campo elettrico dovuto dalle cariche, per il teorema di 
+Gauss è dato da:
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.5]{ch5Ratherford/CampoE}
+\end{figure}
+
+Per capire come una particelle varia la direzione della quantità di moto, dobbiamo integrare
+nel tempo la forza dovuta dal campo elettrico, integrale molto difficile, ciò che possiamo fare però è fare una maggiorazione poichè a noi interessa
+la massima deflessione che la particella può subire.\\
+$F_{max}$ per $r=R$ è:
+\begin{align*}
+    F_{max} = \frac{Ze\rho R}{3\epsilon_{0}}
+\end{align*}
+Essa si collega alla deflessione subita dalla particella dalla seguente:
+\begin{align*}
+        \theta_{max} = \frac{\Delta P}{P_{i}} = \frac{F_{max}\Delta t_{max}}{mv_{0}}
+\end{align*}
+Considerando il mezzo come una lamina d'oro e energia della particella di circa 5MeV si 
+ottiene che la massima deflessione è :
+\begin{align*}
+    \theta_{max} \sim 3\cross10^{-4}rad
+\end{align*}
+Nello strato di oro che considereremo per l'esperimento di Rutherford si hanno circa 2000 atomi, 
+essendo le deflessioni completamente casuali, considerando il processo come un Random Walk :
+\begin{align*}
+    \theta_{f} = \sqrt{2000}\theta_{max} \sim 1,3\cross10^{-2}rad
+\end{align*}
+Viene fuori che l'angolo massimo di deflessione che ci aspettiamo nel caso di uno scattering 
+di una particella carica con un atomo descritto dal modello di Thomson è minuscolo, circa 
+1 grado
+\section{L'esperimento di Rutherford nella pratica}
 Rutherford propose un modello atomico nel quale tutte le cariche positive sono concentrate 
 in un piccolo volume al centro dell'atomo e le cariche negative orbitavano attorno ad esso.
 L'esperimento che fece per provare ciò consisteva nel colpire tali atomi con particelle 
@@ -22,6 +63,12 @@ dove :
 Ciò che vogliamo trovare è la relazione che intercorre fra il parametro di impatto e l'angolo
 di diffusione, il fatto che trattiamo tale problema con metodi classici è molto importante 
 perchè rende il problema \textbf{completamente deterministico}. \\
+\begin{tcolorbox}[colback=red!5!white,colframe=red!50!black,title=ATTENZIONE !]
+Perchè possiamo trattare il problema con metodi classici e non relativistici ? \\
+In quegli anni non esistevano gli acceleratori di particelle, l'unica fonte erano quindi le radiazioni
+che però producono proiettili con energia cinetica $T \sim 5MeV$ molto più piccola della massa della 
+particella $\alpha$ che invece si aggira sui 4 GeV
+\end{tcolorbox}
 \newpage
 La particella $\alpha$ subirà una forza repulsiva diretta radialmente :
 \begin{align*}

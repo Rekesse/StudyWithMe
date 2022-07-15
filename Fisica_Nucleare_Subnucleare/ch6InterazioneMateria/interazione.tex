@@ -214,3 +214,141 @@ L'angolo di emissione è dato dalla relazione:
     \cos{\theta_{c}} &= \frac{1}{\beta n}
 \end{align*}
 L'equivalente meccanico di questo fenomeno è il boom supersonico.
+\subsection{La perdita di energia per irraggiamento}
+Fin'ora non abbiamo considerato cosa succede se la particella proiettile fosse un elettrone, 
+in questo caso la formula di Bethe-Bloch deve essere modificata poichè bisogna tener conto 
+dell'identità tra proiettile e bersaglio.\\
+Un effetto importante è l'emissione di radiazioni elettromagnetiche provocata dall'accelerazione
+dovuta all'urto elastico con il nucleo.
+Tale perdita di energia per irraggiamento è data dalla :
+\begin{align*}
+        \frac{\dd{E}}{\dd{x}} &= 4r_{e}^2\alpha\frac{N_{a}Z^2\rho}{A}\ln{(183Z^{-1/3})}E \\[1em]
+                              &\sim \frac{E}{X_{0}}
+\end{align*}
+a tale contributo va sommato quello di ionizzazione.\\
+Bisogna notare che tale perdita per irraggiamento è lineare in E ciò comporta che, per un 
+certo valore di E, tale contributo supera quello dovuto dalla ionizzazione.
+Tale valore critico è detto appunto \textbf{energia critica} e vale:
+\begin{align*}
+    E_{c} = \frac{800}{Z+1.2}MeV
+\end{align*}
+La costante $X_{0}$ è detta \textbf{lunghezza di radiazione}, definita come la distanza alla
+quale l'energia dell'elettrone si riduce di un fattore 1/e.
+\section{L'interazione fotoni-materia}
+Anche in questo caso bisogna suddividere l'interazione del fotone con gli elettroni, nel caso
+venire assorbito (Effetto fotoelettrico) o cedere un po di energia (Effetto Compton), oppure
+con il nucleo (produzione di coppie).
+\subsection{Effetto fotoelettrico}
+L'interazione avviene fra il fotone e un elettrone che è ancora legato al nucleo, la reazione 
+completa è la seguente:
+\begin{align*}
+    \gamma+X\rightarrow X^{+}+e^{-}
+\end{align*}
+Affinchè tale reazione possa avvenire deve essere rispettata la conservazione dell'energia:
+\begin{align*}
+    &E_{\gamma}+m_{X}=m_{X^{+}}+m_{e}+T_{e}\\
+    &E_{\gamma} = m_{X^{+}}+m_{e}-m_{X}+T_{e}\\
+    &E_{\gamma} = E_{ion}+T_{e}
+\end{align*}
+Ciò comporta che una parte dell'energia del fotone è necessaria per ionizzare ( o anche solo eccitarlo ),
+l'altra per dare energia cinetica all'elettrone, questo spiega la struttura a dente del grafico
+della sezione d'urto del processo, picchi che sono in corrispondenza di energie del fotone 
+compatibili con i livelli energetici degli shell dell'atomo.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.5]{ch6InterazioneMateria/Fotoelettrico}
+\end{figure}
+\newpage
+\subsection{Effetto Compton}
+L'energia del fotone è molto più alta di quella di ionizzazione, possiamo considerare dunque l'elettrone
+come fosse, a questi livelli di energia domina l'effetto Compton rispetto al fotoelettrico.
+Lo scattering fra il fotone e l'elettrone è di tipo elastico dato dalla seguente reazione:
+\begin{align*}
+    \gamma+e^{-} \rightarrow \gamma+e^{-}
+\end{align*}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.7]{ch6InterazioneMateria/Compton}
+\end{figure}
+
+utilizziamo la conservazione dell'energia e dell'impulso:
+\begin{align*}
+    &E+m_{e} = E^{\prime}+E_{e}\\
+    &\va{p}=\va{p^{\prime}}+\va{p_{e}}
+\end{align*}
+dalla seconda si ottiene:
+\begin{align*}
+    &\va{p_{e}} =\va{p}-\va{p^{\prime}} \\
+    &p_{e}^2 = p^2+p^{\prime2}-2pp^{\prime}\cos{\theta}\\
+    &p_{e}^2 = E_{e}^2-m_{e}^2
+\end{align*}
+ricavando l'energia dell'elettrone dalla conservazione dell'energia e facendo un po di calcoli
+che non riporterò si ottiene:
+\begin{align*}
+    E^{\prime} = \frac{m_{e}E}{m_{e}+E-E\cos{\theta}}
+\end{align*}
+Interessante esprimere le energie del fotone in termini di lunghezza d'onda:
+\begin{align*}
+    &E=\frac{hc}{\lambda} & E^{\prime} = \frac{hc}{\lambda^{\prime}}
+\end{align*}
+si ottiene (pure in questo caso ometto i semplici calcoli):
+\begin{align*}
+    \lambda^{\prime} = \lambda +\frac{h}{m_{e}c}(1-\cos{\theta})
+\end{align*}
+dove troviamo la \textbf{lunghezza d'onda di Compton}:
+\begin{align*}
+    \lambda_{c} = \frac{h}{m_{e}c}\simeq 2,4\cross10^{-12}m
+\end{align*}
+\subsection{Produzione di coppia}
+Processo nel quale il fotone viene assorbito dal nucleo producendo una coppia elettrone-positrone 
+secondo il processo:
+\begin{align*}
+    \gamma + X \rightarrow X + e^{-} + e^{+}
+\end{align*}
+Affinchè il processo avvenga deve essere :
+\begin{align*}
+    E_{\gamma} > 2m_{e}c^2
+\end{align*}
+\section{Neutrone-materia}
+Da fare, è facilissimo non mi va ora
+\newpage
+\chapter{I decadimenti radioattivi}
+\chapter{Fusione e fissione nucleare}
+\section{Fissione nucleare}
+Negli anni '30 i ragazzi di via Palisperna fanno esperimenti in cui si accorgono che, bombardando con 
+neutroni terminci, si possa indurre radioattività: senza accorgersene avevano scoperto il 
+fenomeno della fissione indotta.\\
+Solo successivamente, in Germania, si accorsero che bombardando Uranio si ottenevano atomi
+con A e Z di circa la metà.\\
+Prendiamo dunque la reazione:
+\begin{align*}
+    X^{A}_{Z} \rightarrow Y^{A/2}_{Z/2} + Y^{A/2}_{Z/2}
+\end{align*}
+calcoliamoci il Q:
+\begin{align*}
+        Q &= M_{X}-2M_{y}\\
+          &= -B_{x}+2B_{y}\\
+          &=-7.5A + 2\frac{A}{2}8.5\\
+          &\sim 200MeV \tag*{Per atomi pesanti}
+\end{align*}
+dove abbamo scritto la massa di un nucleo come la somma dei nucleoni meno l'energia di ionizzazione B.\\
+Notiamo che Q è molto grande, ad atomi pesanti dunque conviene dividersi in atomi più leggeri,
+i 200MeV di differenza finirà in energia cinetica dei due atomi.
+\subsection{Cosa succede all'atomo durante la fissione}
+Possiamo immaginare che il nucleo, durante il processo, cominci ad allungarsi ellitticamente
+\newpage
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.5]{ch6InterazioneMateria/NucleoFissione}
+    \caption{Nucleo che si sta separando}
+\end{figure}
+
+All'interno del nucleo abbiamo visto (modello a goccia) che vi sono termini di interazione fra i 
+nucleoni, in particolare:
+\begin{itemize}
+        \item Termine di superficie: è il termine che rema contro il legame nucleare, esso 
+                in questa separazione sta aumentando:
+        \item Termine culombiano : termine, aiuta il legame del nucleo, che dipende dalla distanza fra i protoni, durante la 
+                separazione la distanza fra essi aumenta, diminuendo di conseguenza tale termine.
+\end{itemize}
+
